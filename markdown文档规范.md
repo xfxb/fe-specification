@@ -13,5 +13,5 @@
 
 
 [1]:http://wowubuntu.com/markdown/ "markdown基本语法参考"
-[2]:https://github.com/baixing/FE-Blog/issues/5 "github markdown语法参考中文版"
+[2]:https://github.com/baixing/FE-Blog/issues/6 "github markdown语法参考中文版"
 [3]:https://help.github.com/articles/basic-writing-and-formatting-syntax/ "github markdown 官网"

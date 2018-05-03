@@ -8,8 +8,7 @@
 
 - 初始化项目分支约定： `git flow init` (全部回车，按照默认设定即可)
 
-
-输出实例：
+ > 输出实例：
 
 ```bash
 $ git flow init
