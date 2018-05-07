@@ -55,7 +55,3 @@ Host github.com
     PreferredAuthentications publickey
     User bugknightyyp
 ```
-
-## 注意事项
-
-git 使用的是账户信息是gitconfig里配置的用户信息，而不是你ssh里配置的用户
