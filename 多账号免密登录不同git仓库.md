@@ -46,12 +46,12 @@ Host gitlab.blissmall.net
     HostName gitlab.blissmall.net
     IdentityFile C:\Users\win7\.ssh\id_rsa
     PreferredAuthentications publickey
-    User yangyongpeng
+    User yangyongpeng # 网站对应用户名
 
 # 配置github.com
 Host github.com
     HostName github.com
     IdentityFile C:\Users\win7\.ssh\github
     PreferredAuthentications publickey
-    User bugknightyyp
+    User bugknightyyp # 网站对应用户名
 ```
