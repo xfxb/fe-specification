@@ -55,3 +55,14 @@ Host github.com
     PreferredAuthentications publickey
     User bugknightyyp # 网站对应用户名
 ```
+
+## 注意事项
+
+git是通过你`gitconfig`里配置的邮箱来匹配你账户信息的，所以如果你本地仓库没有配置用户信息，git就会使用全局配置的用户信息。
+
+以下是配置全局或者本地仓库用户信息的命令：
+
+```bash
+git config --(global|local) user.name bugknightyyp
+git config --(global|local) user.email bugknightyyp@gmail.com
+```
