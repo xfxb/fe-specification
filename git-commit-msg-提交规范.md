@@ -7,7 +7,7 @@
 ---
 
 ```document
-<type>[optional scope]: <description>
+<type>[optional scope]: <subject>
 (这是里空行)
 [optional body]
 (这是里空行)
@@ -30,7 +30,7 @@
 
 - fix: 修复bug
 
-- refactor: 
+- refactor: 不是bug也不是新功能的代码改动
 
 - perf: 性能、体验等优化
 
@@ -39,6 +39,14 @@
 - test: 测试相关的，修改添加测试用例，集成测试等
 
 当使用命令 `git commit` 时，会弹出commit message 编辑器，可以按照上述格式进行编辑。
+
+**scope**: 表示影响范围，通常按功能模块划分。比如产品模块-product,订单模块-order,用户模块-user,路由-router等。
+
+**subject**: 对改变做简要描述
+
+- use the imperative, present tense: "change" not "changed" nor "changes" （使用祈使句，现在时态： 改变而不是改变过或者使其改变）
+- don't capitalize the first letter （首字母不大写）
+- no dot (.) at the end （不要用句号结尾）
 
 ## 参考
 
