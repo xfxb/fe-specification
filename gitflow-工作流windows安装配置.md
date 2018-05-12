@@ -27,6 +27,8 @@ Hooks and filters directory? [E:/git-test/.git/hooks]
 
 ## git flow 子命令（git flow help查看）
 
+gitflow的一个命令相当于是git的几个命令的集合，通过一系列动作完成一项任务。
+
 ```doc
    init      Initialize a new git repo with support for the branching model.  初始化一个新git仓库，使其支持gitflw分支模型
    feature   Manage your feature branches. 
