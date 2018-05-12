@@ -28,8 +28,8 @@ Hooks and filters directory? [E:/git-test/.git/hooks]
 ## git flow 子命令（git flow help查看）
 
 ```doc
-   init      Initialize a new git repo with support for the branching model.
-   feature   Manage your feature branches.
+   init      Initialize a new git repo with support for the branching model.  初始化一个新git仓库，使其支持gitflw分支模型
+   feature   Manage your feature branches. 
    bugfix    Manage your bugfix branches.
    release   Manage your release branches.
    hotfix    Manage your hotfix branches.
@@ -39,6 +39,23 @@ Hooks and filters directory? [E:/git-test/.git/hooks]
    log       Show log deviating from base branch.
 
    Try 'git flow <subcommand> help' for details. 查看子命令的用法
+
+   $ git flow feature help # 查看所有的子命令
+   usage: git flow feature [list]
+   or: git flow feature start
+   or: git flow feature finish
+   or: git flow feature publish
+   or: git flow feature track
+   or: git flow feature diff
+   or: git flow feature rebase
+   or: git flow feature checkout
+   or: git flow feature pull
+   or: git flow feature delete
+
+    Manage your feature branches.
+
+    For more specific help type the command followed by --help
+
 
 ```
 
