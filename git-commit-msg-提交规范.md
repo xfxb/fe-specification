@@ -22,7 +22,7 @@
 
 - build: 影响构建系统或者外部依赖（比如受影响的范围是webpack, gulp, npm等）
 
-- ci: 持续冀衡， 改变CI
+- ci: 持续测试， 改变CI
 
 - docs: 只修改了文档。如 `README` 以及文档等说明性文件
 
