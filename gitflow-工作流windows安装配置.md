@@ -1,14 +1,18 @@
-# gitflow-工作流windows安装配置及初始化项目
+# gitflow-工作流
+
+## windows安装配置
 
 - 复制安装[命令][1]到本地
 
 - 执行该命令安装：`./gitflow.sh install stable`
 
+## 初始化项目
+
 - 进入项目根目录: `cd project-name`
 
 - 初始化项目分支约定： `git flow init` (全部回车，按照默认设定即可)
 
- > 输出实例：
+输出示例：
 
 ```bash
 $ git flow init
@@ -44,10 +48,10 @@ gitflow的一个命令相当于是git的几个命令的集合，通过一系列�
 
    $ git flow feature help # 查看所有的子命令
    usage: git flow feature [list]
-   or: git flow feature start
-   or: git flow feature finish
-   or: git flow feature publish
-   or: git flow feature track
+   or: git flow feature start  // 创建分支
+   or: git flow feature finish // 完成分支
+   or: git flow feature publish //将本地分支发布到远程仓库
+   or: git flow feature track // 设置跟踪
    or: git flow feature diff
    or: git flow feature rebase
    or: git flow feature checkout
