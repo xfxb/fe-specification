@@ -4,7 +4,7 @@ vscode有四个等级的配置，优先级依次是：
 
 文件设置 > 工作区设置 > 用户设置 > 编辑器默认设置
 
-我们是放在工作区（存放目录 project-name/.vscode/.settings.json）来统一代码格式化。
+我们是放在工作区（存放目录 project-name/.vscode/settings.json）来统一代码格式化。
 
 这只是基本项,每个项目可以针对项目需求添加所需配置。
 
