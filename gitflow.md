@@ -68,7 +68,7 @@ gitflow的一个命令相当于是git的几个命令的集合，通过一系列�
 
 ## 开发人员发起 pull request
 
-`feature` 分支测试通过后请求合并到 `development` 分支
+`feature` 分支测试通过后请求合并到 `develop` 分支
 `hotfix` 分支测试通过后请求合并到 `master` 分支
 
 ``
