@@ -48,9 +48,9 @@ gitflow的一个命令相当于是git的几个命令的集合，通过一系列�
 
    $ git flow feature help # 查看所有的子命令
    usage: git flow feature [list]
-   or: git flow feature start  // 创建分支
-   or: git flow feature finish // 完成分支
-   or: git flow feature publish //将本地分支发布到远程仓库
+   or: git flow feature start  // 创建feature分支
+   or: git flow feature finish // 完成feature分支
+   or: git flow feature publish //将本地feature分支发布到远程仓库
    or: git flow feature track // 设置跟踪
    or: git flow feature diff
    or: git flow feature rebase

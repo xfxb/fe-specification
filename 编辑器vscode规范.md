@@ -1,51 +1,25 @@
-## vscode 编辑器
+# vscode 编辑器规范
 
 vscode有四个等级的配置，优先级依次是：
 
 文件设置 > 工作区设置 > 用户设置 > 编辑器默认设置
 
-项目的基本设置我们放在用户设置，具体设置项如下：
+我们是放在工作区（存放目录 project-name/.vscode/.settings.json）来统一代码格式化。
+
+这只是基本项,每个项目可以针对项目需求添加所需配置。
 
 ```json
-
+{
+  "editor.detectIndentation": false, //关闭自动探测缩进方式
+  "editor.tabSize": 2, // 一个制表符等于2个空格
+  "editor.wordWrap": "wordWrapColumn",//换行方式为 超过 配置的列（wordWrapColumn） 就换行发的发生 第三方的
+  "editor.wordWrapColumn": 80,
+  "files.insertFinalNewline": true, // 自动在文件末尾插入新行
+}
 ```
 
-使用 `.editorconfig` 统一团队代码风格问题,解决缩进及行长问题。[参考][1]
+## 参考
 
-```ini
-# EditorConfig is awesome: http://EditorConfig.org
-
-# top-most EditorConfig file
-root = true
-
-# Unix-style newlines with a newline ending every file
-[*]
-end_of_line = lf
-insert_final_newline = true
-
-# Matches multiple files with brace expansion notation
-# Set default charset
-[*.{js,py}]
-charset = utf-8
-
-# 4 space indentation
-[*.py]
-indent_style = space
-indent_size = 4
-
-# Tab indentation (no size specified)
-[Makefile]
-indent_style = tab
-
-# Indentation override for all JS under lib directory
-[lib/**.js]
-indent_style = space
-indent_size = 2
-
-# Matches the exact files either package.json or .travis.yml
-[{package.json,.travis.yml}]
-indent_style = space
-indent_size = 2
-```
+[vscode 设置文档](https://code.visualstudio.com/docs/getstarted/settings)
 
 [1]:http://editorconfig.org/
