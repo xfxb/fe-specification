@@ -18,6 +18,8 @@ vscode有四个等级的配置，优先级依次是：
 }
 ```
 
+项目里会自带关于vscode 的配置，如果你是基于其他编辑器，请自行设置对等的配置。
+
 ## 参考
 
 [vscode 设置文档](https://code.visualstudio.com/docs/getstarted/settings)
