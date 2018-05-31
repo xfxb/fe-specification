@@ -13,7 +13,7 @@ vscode有四个等级的配置，优先级依次是：
   "editor.detectIndentation": false, //关闭自动探测缩进方式
   "editor.tabSize": 2, // 一个制表符等于2个空格
   "editor.wordWrap": "wordWrapColumn",//换行方式为 超过 配置的列（wordWrapColumn） 就换行发的发生 第三方的
-  "editor.wordWrapColumn": 80,
+  "editor.wordWrapColumn": 100,
   "files.insertFinalNewline": true, // 自动在文件末尾插入新行
 }
 ```
