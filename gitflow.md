@@ -81,8 +81,11 @@ gitflow的一个命令相当于是git的几个命令的集合，通过一系列�
 
 [gitflow 官方库地址][3]
 
+[gitlab 内部培训文档][5]
+
 
 [1]:https://raw.githubusercontent.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh "windows 安装 git flow命令"
 [2]:http://danielkummer.github.io/git-flow-cheatsheet/index.zh_CN.html "git-flow 备忘清单"
 [3]:https://github.com/petervanderdoes/gitflow-avh "gitflow 官方库地址"
 [4]:https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/git-flow "git-flow 的工作流程"
+[5]:https://zhangmengpl.gitbooks.io/gitlab-guide/content/index.html "gitlab 内部培训文档"
