@@ -46,7 +46,8 @@ gitflow的一个命令相当于是git的几个命令的集合，通过一系列�
 
    Try 'git flow <subcommand> help' for details. 查看子命令的用法
 
-   $ git flow feature help # 查看所有的子命令
+   $ git flow feature help # 查看所有的子命令。每个分支命令(eg: feature, hotfix)的动作命令(eg: start, finish) 几乎是一样的。
+   例如：
    usage: git flow feature [list]
    or: git flow feature start  // 创建feature分支
    or: git flow feature finish // 完成feature分支
@@ -56,7 +57,7 @@ gitflow的一个命令相当于是git的几个命令的集合，通过一系列�
    or: git flow feature rebase
    or: git flow feature checkout
    or: git flow feature pull
-   or: git flow feature delete
+   or: git flow feature delete // 删除feature分支
 
     Manage your feature branches.
 
@@ -65,7 +66,12 @@ gitflow的一个命令相当于是git的几个命令的集合，通过一系列�
 
 ```
 
+## 开发人员发起 pull request
 
+`feature` 分支测试通过后请求合并到 `development` 分支
+`hotfix` 分支测试通过后请求合并到 `master` 分支
+
+``
 
 ## 参考
 
