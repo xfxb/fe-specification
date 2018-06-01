@@ -63,6 +63,31 @@ gitflow的一个命令相当于是git的几个命令的集合，通过一系列�
 
     For more specific help type the command followed by --help
 
+    $ git flow hotfix finish --help # 查看动作命令用法
+    usage: git flow hotfix finish [-h] [-F] [-s] [-u] [-m | -f ] [-p] [-k] [-n] [-b] [-S] <version>
+
+    Finish hotfix branch <version>
+
+    -h, --help            Show this help
+    --showcommands        Show git commands while executing them
+    -F, --[no]fetch       Fetch from origin before performing finish
+    -s, --[no]sign        Sign the release tag cryptographically
+    -u, --[no]signingkey  Use the given GPG-key for the digital signature (implies -s)
+    -m, --[no]message     Use the given tag message
+    -f, --[no]messagefile ...
+                          Use the contents of the given file as tag message
+    -p, --[no]push        Push to origin after performing finish
+    -k, --[no]keep        Keep branch after performing finish
+    --[no]keepremote      Keep the remote branch
+    --[no]keeplocal       Keep the local branch
+    -D, --[no]force_delete
+                          Force delete hotfix branch after finish
+    -n, --[no]notag       Don't tag this hotfix
+    -b, --[no]nobackmerge
+                          Don't back-merge master, or tag if applicable, in develop
+    -S, --[no]squash      Squash hotfix during merge
+    -T, --tagname         Use given tag name
+
 
 ```
 
@@ -83,9 +108,12 @@ gitflow的一个命令相当于是git的几个命令的集合，通过一系列�
 
 [gitlab 内部培训文档][5]
 
+[gitflow 参数说明文档][6]
+
 
 [1]:https://raw.githubusercontent.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh "windows 安装 git flow命令"
 [2]:http://danielkummer.github.io/git-flow-cheatsheet/index.zh_CN.html "git-flow 备忘清单"
 [3]:https://github.com/petervanderdoes/gitflow-avh "gitflow 官方库地址"
 [4]:https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/git-flow "git-flow 的工作流程"
 [5]:https://zhangmengpl.gitbooks.io/gitlab-guide/content/index.html "gitlab 内部培训文档"
+[6]:https://github.com/petervanderdoes/gitflow-avh/wiki "gitflow 参数说明文档"
