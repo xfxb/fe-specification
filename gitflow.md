@@ -98,6 +98,20 @@ gitflow的一个命令相当于是git的几个命令的集合，通过一系列�
 
 ``
 
+## master 发布hotfix分支
+
+- `checkout hotfix/branchName`
+- `git flow hotfix finish -F -T v1.1.15 -p -m 'tag message'`
+    Summary of actions:(这一句命令做了做么事)
+    - Latest objects have been fetched from 'origin'
+    - Hotfix branch 'hotfix/cys_phone_check_20180605' has been merged into 'master'
+    - The hotfix was tagged 'v1.1.15'
+    - Hotfix tag 'v1.1.15' has been back-merged into 'develop'
+    - Hotfix branch 'hotfix/cys_phone_check_20180605' has been locally deleted; it has been remotely deleted from 'origin'
+    - 'develop', 'master' and tags have been pushed to 'origin'
+    - You are now on branch 'develop'
+
+
 ## 参考
 
 [git-flow 备忘清单][2]
