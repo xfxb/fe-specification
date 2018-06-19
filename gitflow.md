@@ -103,14 +103,14 @@ gitflow的一个命令相当于是git的几个命令的集合，通过一系列�
 [developer]
 
 - 基于`featureBranchName`创建自己的功能分支：`git flow feature start -F  yourselfBranchName  origin/feature/featureBranchName`
-- [你可能会用到其他人的功能或者模块等]，这种情形处理方式，待其他人更新`origin/feature/featureBranchName`之后,需要更新本地分支：`get fetch && git rebase  origin/feature/featureBranchName`
+- [你可能会用到其他人的功能或者模块等]。这种情形处理方式: 待其他人更新`origin/feature/featureBranchName`之后, 更新自己本地开发分支：`git fetch && git rebase  origin/feature/featureBranchName`
 - 合并请求到 feature 总分支
 
 ## 修复release分支bug(bugfix)
 
 [developer]
 
-- 基于 release 分支创建 bugfix 分支：`git flow bugfix start yourselfBranchName origin/release/vx.x.x`
+- 基于 release 分支创建 bugfix 分支：`git fetch && git flow bugfix start yourselfBranchName origin/release/vx.x.x`
 - 推送bugfix分支到远程： `git flow bugfix publish`
 - 合并请求到 release/vx.x.x 分支
 
@@ -129,7 +129,7 @@ gitflow的一个命令相当于是git的几个命令的集合，通过一系列�
 2. 打标签发布：
 - `checkout hotfix/branchName`
 - `git flow hotfix finish -F -T v1.1.15 -p -m 'tag message'`
-    Summary of actions:(这一句命令做了做么事)
+    Summary of actions:(这一句命令做了什么事)
     - Latest objects have been fetched from 'origin'
     - Hotfix branch 'hotfix/cys_phone_check_20180605' has been merged into 'master'
     - The hotfix was tagged 'v1.1.15'
