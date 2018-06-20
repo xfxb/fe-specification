@@ -4,12 +4,9 @@
 
 ## 语法
 
-es / typescript
+借助eslint来规范
 
 ## 代码
-
-- ESlint
-- 不要出现魔法字符串
 
 ## 模块
 
@@ -26,5 +23,8 @@ es / typescript
 
 - js
 
+- 接口服务
+
 ## 其他
 
+- 不要出现魔法字符串
