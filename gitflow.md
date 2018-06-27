@@ -127,7 +127,7 @@ gitflow的一个命令相当于是git的几个命令的集合，通过一系列�
 
 1. 收到合并请求后，审核代码
 2. 打标签发布：
-- `checkout hotfix/branchName`
+- `git fetch && git checkout hotfix/branchName`
 - `git flow hotfix finish -F -T v1.1.15 -p -m 'tag message'`
     Summary of actions:(这一句命令做了什么事)
     - Latest objects have been fetched from 'origin'
