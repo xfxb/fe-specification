@@ -95,22 +95,22 @@ gitflow的一个命令相当于是git的几个命令的集合，通过一系列�
 
 [master]
 
-- 创建feature分支：`git flow feature start featureBranchName`
+- 创建feature分支：`git flow feature start feature-branch-name`
 - 合并feature分支到 develop 分支：`git flow feature finish`
 - 创建release分支：`git flow release start vx.x.x`
 - release分支提测后, 发布release分支：`git flow release finish -F -T vx.x.x -p -m 'tag message'`
 
 [developer]
 
-- 基于`featureBranchName`创建自己的功能分支：`git fetch && git checkout  feature/featureBranchName && git flow feature start -F  yourselfBranchName  feature/featureBranchName`
-- [你可能会用到其他人的功能或者模块等]。这种情形处理方式: 待其他人合并请求更新`origin/feature/featureBranchName`之后, 然后更新自己本地开发分支：`git fetch && git rebase  origin/feature/featureBranchName`
+- 基于`featureBranchName`创建自己的功能分支：`git fetch && git checkout  feature/feature-branch-name && git flow feature start -F  yourself-branch-name  feature/feature-branch-name`
+- [你可能会用到其他人的功能或者模块等]。这种情形处理方式: 待其他人合并请求更新`origin/feature/feature-branch-name`之后, 然后更新自己本地开发分支：`git fetch && git rebase  feature/feature-branch-name`
 - 合并请求到 feature 总分支
 
 ## 修复release分支bug(bugfix)
 
 [developer]
 
-- 基于 release 分支创建 bugfix 分支：`git fetch && git flow bugfix start yourselfBranchName origin/release/vx.x.x`
+- 基于 release 分支创建 bugfix 分支：`git fetch && git flow bugfix start yourself-branch-name origin/release/vx.x.x`
 - 推送bugfix分支到远程： `git flow bugfix publish`
 - 合并请求到 release/vx.x.x 分支
 
@@ -118,16 +118,16 @@ gitflow的一个命令相当于是git的几个命令的集合，通过一系列�
   
 [developer]:
 
-1. 创建自己的bug分支：`git flow hotfix start yourBranchName`
+1. 创建自己的bug分支：`git flow hotfix start your-branch-name`
 2. bug修复之后，把本地分支提交远程仓库：`git flow hotfix publish`
 3. 发提测邮件
-4. 测试通过后，在远程库发起合并请求：pr `hotfix/yourBranchName` to `master`
+4. 测试通过后，在远程库发起合并请求：pr `hotfix/your-branch-name` to `master`
 
 [master]:
 
 1. 收到合并请求后，审核代码
 2. 打标签发布：
-- `git fetch && git checkout hotfix/branchName`
+- `git fetch && git checkout hotfix/branch-name`
 - `git flow hotfix finish -F -T v1.1.15 -p -m 'tag message'`
     Summary of actions:(这一句命令做了什么事)
     - Latest objects have been fetched from 'origin'
