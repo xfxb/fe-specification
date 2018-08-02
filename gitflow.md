@@ -102,7 +102,7 @@ gitflow的一个命令相当于是git的几个命令的集合，通过一系列�
 
 [developer]
 
-- 基于`featureBranchName`创建自己的功能分支：`git fetch && git checkout  feature/feature-branch-name && git flow feature start -F  yourself-branch-name  feature/feature-branch-name`
+- 基于`feature-branch-name`创建自己的功能分支：`git fetch && git checkout  feature/feature-branch-name && git flow feature start -F  yourself-branch-name  feature/feature-branch-name`
 - [你可能会用到其他人的功能或者模块等]。这种情形处理方式: 待其他人合并请求更新`origin/feature/feature-branch-name`之后, 然后更新自己本地开发分支：`git fetch && git rebase  feature/feature-branch-name`
 - 合并请求到 feature 总分支
 
@@ -110,7 +110,7 @@ gitflow的一个命令相当于是git的几个命令的集合，通过一系列�
 
 [developer]
 
-- 基于 release 分支创建 bugfix 分支：`git fetch && git flow bugfix start yourself-branch-name origin/release/vx.x.x`
+- 基于 release 分支创建 bugfix 分支：`git fetch && git checkout  release/vx.x.x && git flow bugfix start yourself-branch-name release/vx.x.x`
 - 推送bugfix分支到远程： `git flow bugfix publish`
 - 合并请求到 release/vx.x.x 分支
 
