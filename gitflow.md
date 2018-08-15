@@ -95,7 +95,7 @@ gitflow的一个命令相当于是git的几个命令的集合，通过一系列�
 
 [master]
 
-- 创建feature分支：`git flow feature start feature-branch-name`
+- 创建feature分支：`git flow feature start -F feature-branch-name`
 - 合并feature分支到 develop 分支：`git flow feature finish`
 - 创建release分支：`git flow release start vx.x.x`
 - release分支提测后, 发布release分支：`git flow release finish -F -T vx.x.x -p -m 'tag message'`
@@ -118,7 +118,7 @@ gitflow的一个命令相当于是git的几个命令的集合，通过一系列�
   
 [developer]:
 
-1. 创建自己的bug分支：`git flow hotfix start your-branch-name`
+1. 创建自己的bug分支：`git flow hotfix start -F your-branch-name`
 2. bug修复之后，把本地分支提交远程仓库：`git flow hotfix publish`
 3. 发提测邮件
 4. 测试通过后，在远程库发起合并请求：pr `hotfix/your-branch-name` to `master`
