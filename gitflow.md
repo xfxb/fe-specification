@@ -6,6 +6,10 @@
 
 - 执行该命令安装：`./gitflow.sh install stable`
 
+## OSX安装配置
+
+- 执行`brew install git-flow-avh`
+
 ## 初始化项目
 
 - 进入项目根目录: `cd project-name`
