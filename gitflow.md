@@ -146,6 +146,12 @@ gitflow的一个命令相当于是git的几个命令的集合，通过一系列�
 
 查看标签列表：`git tag --column --sort=-v:refname`
 
+## 常见问题
+
+### 1. `error: There was a problem with the editor 'vi'.Not committing merge; use 'git commit' to complete the merge.`
+
+   运行`git config --global core.editor $(which vim)`可以解决
+
 ## 参考
 
 [git-flow 备忘清单][2]
